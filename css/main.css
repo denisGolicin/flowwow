@@ -219,6 +219,9 @@ header{
     text-transform: uppercase;
     white-space: nowrap;
 }
+.in-mobile-text{
+    width: 45% !important;
+}
 /* .card-name-wrapper>p:first-child{
     transform: translateX(-15%);
 }
