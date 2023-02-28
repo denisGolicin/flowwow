@@ -8,4 +8,10 @@ function pageMove(pageid){
 
     let result = '-' + pageid * 100 + '%'
     wrapper.style.transform = `translateX(${result})`;
+
+    if(pageid == 8){
+        setTimeout(function(){
+            alert("Номер цветка: " + cards.result());
+        }, 100);
+    }
 }
