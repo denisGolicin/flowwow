@@ -23,6 +23,11 @@ body, html{
     overflow: hidden;
 }
 
+.back{
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .wrapper{
     width: 100%;
     height: 100%;
@@ -265,3 +270,4 @@ header{
     transform: translateX(-50%) !important;
     white-space: nowrap;
 }
+
