@@ -222,11 +222,10 @@ header{
     line-height: 24px;
     text-transform: uppercase;
     white-space: nowrap;
-    transition: 1s;
+    transition: .6s;
 }
 
 .left-text, .right-text{
-    transition: .3s;
     width: 35%;
 }
 
