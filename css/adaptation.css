@@ -33,6 +33,10 @@
     .card-name-wrapper>p{
         font-size: 18px;
     }
+    .in-mobile-text {
+        
+        width: 41%;
+    }
 
     .page-model-text{
         margin-bottom: 20px;
@@ -47,12 +51,11 @@
 
 @media (max-height: 670px) {
     .card-name-wrapper>p{
-        width: 37%;
         font-size: 13px;
     }
     .in-mobile-text{
         font-size: 12px !important;
-        width: 41% !important;
+        width: 41%;
     }
     .final-text{
         font-size: 15px;
@@ -106,7 +109,7 @@
         font-size: 18px;
     }
     .card-name-wrapper>p {
-        width: 40%;
+        
         font-size: 12px !important;
         line-height: 18px;
     }

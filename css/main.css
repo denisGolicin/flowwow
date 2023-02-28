@@ -223,9 +223,22 @@ header{
     line-height: 24px;
     text-transform: uppercase;
     white-space: nowrap;
+    transition: 1s;
 }
+
+.left-text, .right-text{
+    transition: .3s;
+}
+
+/* .left-text:hover{
+    width: 100%;
+}
+.left-text:hover ~ .right-text{
+    width: 0;
+    opacity: 0;
+} */
 .in-mobile-text{
-    width: 45% !important;
+    width: 45%;
 }
 /* .card-name-wrapper>p:first-child{
     transform: translateX(-15%);
@@ -269,5 +282,8 @@ header{
     left: 50%;
     transform: translateX(-50%) !important;
     white-space: nowrap;
+}
+.ar-img{
+    width: 164px;
 }
 

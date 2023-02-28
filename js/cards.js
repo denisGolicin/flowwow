@@ -2,11 +2,11 @@ let cardMove = false;
 let interval = 200;
 class AnimateCards extends ProccesTest {
    
-    clickLeft(left, right){
+    clickLeft(left, right, leftText, rightText){
         if(cardMove) return;
     
         if(left.active){
-            resetAmination(left, right);
+            resetAmination(left, right, leftText, rightText);
             return;
         }
         setTransform(right, '25%', '0', '1', '-5deg');
@@ -16,10 +16,16 @@ class AnimateCards extends ProccesTest {
         cardMove = true;
         cards.change(pageCount, left.name);
         console.log(cards.result());
+
+        leftText.style.width = "100%";
+        leftText.style.opacity = "1";
+
+        rightText.style.width = "0";
+        rightText.style.opacity = "0";
     }
-    clickRight(left, right){
+    clickRight(left, right, leftText, rightText){
         if(right.active){
-            resetAmination(left, right);
+            resetAmination(left, right, leftText, rightText);
             return;
         }
         setTransform(left, '-50%', '0', '1', '-5deg');
@@ -29,9 +35,15 @@ class AnimateCards extends ProccesTest {
         cardMove = true;
         cards.change(pageCount, right.name);
         console.log(cards.result());
+
+        leftText.style.width = "0";
+        leftText.style.opacity = "0";
+
+        rightText.style.width = "100%";
+        rightText.style.opacity = "1";
     }
 }
-function resetAmination(left, right){
+function resetAmination(left, right, leftText, rightText){
     setTransform(right, '25%', '0', '1', '0deg');
     setTransform(left, '-25%', '0', '1', '0deg');
     setTimeout(setCardWith, interval, left, right);
@@ -39,6 +51,14 @@ function resetAmination(left, right){
     left.active = false;
     cardMove = true;
     cards.change(pageCount, "");
+
+    leftText.style.width = leftText.oldVal;
+    leftText.style.opacity = "1";
+
+    rightText.style.width = rightText.oldVal;
+    rightText.style.opacity = "1";
+
+
 }
 function setAninLeftDownCard(left, right){
     left.style.zIndex = '0';
