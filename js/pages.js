@@ -1,4 +1,16 @@
 const modelView = document.querySelector('.model-style');
+const scaleModel = [
+    "1.0 1.0 1.0",
+    "1.0 1.0 1.0",
+    "1.0 1.0 1.0",
+    "1.0 1.0 1.0",
+    "1.0 1.0 1.0",
+    "1.0 1.0 1.0",
+    "1.0 1.0 1.0",
+    "1.0 1.0 1.0",
+    "1.0 1.0 1.0",
+    "1.0 1.0 1.0"
+]
 
 function pageMove(pageid){
     if(pageid == 1 || pageid == 7){
@@ -12,8 +24,10 @@ function pageMove(pageid){
     wrapper.style.transform = `translateX(${result})`;
 
     if(pageid == 8){
+        const id = cards.result();
         setTimeout(function(){
-            modelView.src = "src/models/" + cards.result() + ".glb";
+            modelView.src = "src/models/" + id + ".glb";
+            modelView.scale = scaleModel[Number(id)]; 
 
             console.log(modelView.src);
         }, 100);
