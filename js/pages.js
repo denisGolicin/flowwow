@@ -10,7 +10,20 @@ const scaleModel = [
     "1.0 1.0 1.0",
     "1.0 1.0 1.0",
     "1.0 1.0 1.0"
-]
+];
+
+const animationName = [
+    "Anim Blye",
+    "",
+    "Armature|ALL",
+    "rotate",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+];
 
 function pageMove(pageid){
     if(pageid == 1 || pageid == 7){
@@ -28,8 +41,9 @@ function pageMove(pageid){
         setTimeout(function(){
             modelView.src = "src/models/" + id + ".glb";
             modelView.scale = scaleModel[Number(id)]; 
+            modelView.animationName = animationName[Number(id)];
 
-            console.log(modelView.src);
+            alert("Цветок номер: " + id);
         }, 100);
     }
 }
