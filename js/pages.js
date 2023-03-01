@@ -13,7 +13,7 @@ function pageMove(pageid){
 
     if(pageid == 8){
         setTimeout(function(){
-            modelView.src = "../src/models/" + "1" + ".glb";
+            modelView.src = "src/models/" + "1" + ".glb";
 
             console.log(modelView.src);
         }, 100);
