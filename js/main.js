@@ -57,3 +57,13 @@ for(let i = 0; i < rightCard.length; i++){
         cards.clickRight(leftCard[i], rightCard[i], leftText[i], rightText[i]);
     })
 }
+
+let iOS = (navigator.userAgent.match(/(iPad|iPhone|iPod)/i) ? true : false);
+let iOS7 = (navigator.userAgent.match(/(OS 7_0)/i) ? true : false);
+let android = (navigator.userAgent.match(/Android/i) ? true : false);
+
+if(iOS || iOS7 || android){
+    alert("Okay")
+} else {
+    alert("Not okay")
+}
