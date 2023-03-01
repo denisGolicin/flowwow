@@ -1,6 +1,6 @@
 const modelView = document.querySelector('.model-style');
 const scaleModel = [
-    "2.0 2.0 2.0", // 1
+    "5.0 5.0 5.0", // 1
     "6.0 6.0 6.0", // 2
     "0.1 0.1 0.1", // 3
     "1.0 1.0 1.0",
