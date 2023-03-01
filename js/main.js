@@ -58,16 +58,16 @@ for(let i = 0; i < rightCard.length; i++){
     })
 }
 
-let iOS = (navigator.userAgent.match(/(iPad|iPhone|iPod)/i) ? true : false);
-let iOS7 = (navigator.userAgent.match(/(OS 7_0)/i) ? true : false);
-let android = (navigator.userAgent.match(/Android/i) ? true : false);
+// let iOS = (navigator.userAgent.match(/(iPad|iPhone|iPod)/i) ? true : false);
+// let iOS7 = (navigator.userAgent.match(/(OS 7_0)/i) ? true : false);
+// let android = (navigator.userAgent.match(/Android/i) ? true : false);
 
-let buttonMain = document.querySelector('.button-main');
-let textMain = document.querySelector('.main-text');
+// let buttonMain = document.querySelector('.button-main');
+// let textMain = document.querySelector('.main-text');
 
-if(iOS || iOS7 || android){
+// if(iOS || iOS7 || android){
     
-} else {
-    buttonMain.style.display = 'none';
-    textMain.innerHTML = 'Sorry ;(<br>This device is not supported!';
-}
+// } else {
+//     buttonMain.style.display = 'none';
+//     textMain.innerHTML = 'Sorry ;(<br>This device is not supported!';
+// }

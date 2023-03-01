@@ -1,3 +1,5 @@
+const modelView = document.querySelector('.model-style');
+
 function pageMove(pageid){
     if(pageid == 1 || pageid == 7){
         document.querySelector('header').style.display = 'flex';
@@ -11,7 +13,9 @@ function pageMove(pageid){
 
     if(pageid == 8){
         setTimeout(function(){
-            alert("Номер цветка: " + cards.result());
+            modelView.src = "../src/models/" + "1" + ".glb";
+
+            console.log(modelView.src);
         }, 100);
     }
 }
