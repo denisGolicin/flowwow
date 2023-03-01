@@ -11,10 +11,10 @@ for(let i = 0; i < buttonNext.length; i++){
 
     buttonNext[i].addEventListener('click', function(){
         if(pageCount >= 1){
-            if(!leftCard[i - 1].active && !rightCard[i - 1].active){
-                alert('Выберете карту!');
-                return;
-            }
+            // if(!leftCard[i - 1].active && !rightCard[i - 1].active){
+            //     alert('Выберете карту!');
+            //     return;
+            // }
         }
         pageCount = i + 1;
         pageMove(pageCount);
