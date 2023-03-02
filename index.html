@@ -19,6 +19,16 @@
 	
 </head>
 	<body>
+		<div style="z-index: 10000;" class="page-main-wrapper" id="support">
+			<div class="page-main-logo">
+				<img src="svg/flowwow.svg" alt="logo">
+			</div>
+			<p><b>Oops...</b></p>
+			<div class="img-line">
+				<img src="svg/line.svg" alt="logo">
+			</div>
+			<h1 class="main-text"><a href="https://flowwow.com" target="_blank">The device is not supported! ;(<br>Visit our website</a></h1>
+		</div>
 		<div></div>
 		<div class="background-img">
 			<img src="svg/background.svg" alt="bg">
@@ -28,22 +38,27 @@
 				<img src="svg/flowwow.svg" alt="logo">
 			</div>
 			<div class="header-element">
-				<p class="back">< back</p>
+				<p class="back">back</p>
 			</div>
 		</header>
 
+		<div class="invalid-wrapper">
+			<div class="invalid">
+				<p><b>You didn't choose a card!</b></p>
+			</div>
+		</div>
+
 		<div class="wrapper">
-			
-			<div class="page-wrapper" id="page-main">
+			<div class="page-wrapper">
 				<div class="page-main-wrapper">
 					<div class="page-main-logo">
 						<img src="svg/flowwow.svg" alt="logo">
 					</div>
-					<p><b>Welcome</b></p>
+					<p><b>Welcome!</b></p>
 					<div class="img-line">
 						<img src="svg/line.svg" alt="logo">
 					</div>
-					<h1 class="main-text">Take a test to explore your personality flower</h1>
+					<h1 class="main-text main-text-pk">Take a test to explore your personality flower</h1>
 	
 					<button class="button-all next button-main">Explore</button>
 				</div>
@@ -213,17 +228,20 @@
 					</div>
 					<p class="page-model-text">Reminder: Don’t forget to take a picture and share it on your social media account.</p>
 					<div class="model-wrapper">
-						<model-viewer class="model-style" src="src/models/2.glb"
+						<model-viewer class="model-style" 
+							src="src/models/4.glb"
 							alt="gaz"
 							ar
+							scale = "10.0 10.0 10.0"
 							shadow-intensity="1"
-							scale="1.0 1.0 1.0"
 							autoplay
 							>
-			  				<button slot="ar-button" class="view-ar">View in AR</button>
+							<!-- ar-modes="scene-viewer webxr quick-look" -->
+			  				<button slot="ar-button" class="view-ar">View in AR!</button>
+							  <!-- <div class="ar-hide"><p>View flower</p></div> -->
 						</model-viewer>
 					</div>
-					<p class="back page-model-back"><b>< back</b></p>
+					<p class="back page-model-back"><b>back</b></p>
 					
 				</div>
 			</div>

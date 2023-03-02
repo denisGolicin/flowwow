@@ -42,7 +42,7 @@
         margin-bottom: 20px;
     }
     .page-model-back{
-        margin-top: 0;
+        margin-top: 10px;
     }
     .model-wrapper{
         margin-bottom: 10px;
@@ -69,9 +69,6 @@
 }
 
 @media (max-height: 650px){
-	.page-question-wrapper{
-        overflow: hidden;
-    }
     .final-text{
         font-size: 12px !important;
         margin-top: 10px !important;
@@ -114,6 +111,90 @@
         line-height: 18px;
     }
 }
+
+@media (max-height: 540px) {
+    .page-question-wrapper>.question-title {
+        font-size: 20px;
+    }
+    .header-element>img {
+        width: 50%;
+    }
+    .page-main-wrapper>p {
+        font-size: 30px;
+    }
+    .page-main-wrapper>h1{
+        font-size: 18px;
+        padding: 0 20px 0 20px;
+    }
+    .page-main-logo>img {
+        width: 50%;
+    }
+    .final-text{
+        line-height: 13px;
+        font-size: 10px !important;
+    }
+    .button-all{
+        margin: 10px;
+    }
+    .card-name-wrapper>p {
+        font-size: 9px !important;
+    }
+    .model-wrapper>model-viewer {
+        width: 60%;
+        height: 35px;
+    }
+    .view-ar{
+        font-size: 12px !important;
+    }
+    .page-model-back {
+        margin-top: 10px;
+    }
+}
+
+@media (max-height: 500px){
+    .button-all {
+        padding: 5px 30px 5px 30px;
+        font-size: 10px;
+    }
+    .page-question-wrapper>.question-title {
+        margin-bottom: 0px;
+    }
+    .page-question-wrapper>.question-text {
+        margin-top: 0px;
+        font-size: 13px;
+    }
+    .page-model-text{
+        font-size: 11px;
+    }
+    .left, .right{
+        width: 135px;
+        height: 180px
+    }
+    .header-element>p {
+        font-size: 14px;
+    }
+    .back::after{
+        width: 5px;
+    }
+}
+
+@media (max-height: 479px){
+    .wrapper{
+        display: none;
+    }
+    #support{
+        display: flex;
+    }
+    header{
+        display: none !important;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 @media (min-width: 1279px) {
     
 }

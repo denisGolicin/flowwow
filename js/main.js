@@ -7,12 +7,18 @@ buttonBack = document.querySelectorAll('.back');
 const wrapper = document.querySelector('.wrapper');
 let pageCount = 0;
 
+let invalid = document.querySelector('.invalid-wrapper');
+
 for(let i = 0; i < buttonNext.length; i++){
 
     buttonNext[i].addEventListener('click', function(){
         if(pageCount >= 1){
             if(!leftCard[i - 1].active && !rightCard[i - 1].active){
-                alert('Выберете карту!');
+                invalid.style.display = 'flex';
+
+                setTimeout(function(){
+                    invalid.style.display = 'none';
+                }, 1500)
                 return;
             }
         }
@@ -63,11 +69,11 @@ for(let i = 0; i < rightCard.length; i++){
 // let android = (navigator.userAgent.match(/Android/i) ? true : false);
 
 // let buttonMain = document.querySelector('.button-main');
-// let textMain = document.querySelector('.main-text');
+// let textMain = document.querySelector('.main-text-pk');
 
 // if(iOS || iOS7 || android){
-    
+
 // } else {
 //     buttonMain.style.display = 'none';
-//     textMain.innerHTML = 'Sorry ;(<br>This device is not supported!';
+//     textMain.innerHTML = '<a href="https://flowwow.com" target="_blank">The device is not supported! ;(<br>Visit our website</a>';
 // }
