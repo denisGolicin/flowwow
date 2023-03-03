@@ -315,7 +315,7 @@ header{
     border-radius: 50px;
 }
 .ar-img{
-    width: 164px;
+    width: 120px;
 }
 .ar-hide{
     width: 100%;
@@ -360,6 +360,11 @@ header{
     justify-content: center;
     align-items: center;
     font-size: 18px;
+}
+
+.description{
+    font-size: 17px !important;
+    line-height: 18px !important;
 }
 
 /* .invalid-wrapper{
