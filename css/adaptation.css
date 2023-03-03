@@ -45,6 +45,8 @@
 
     .page-model-text{
         margin-bottom: 20px;
+        font-size: 13px;
+        line-height: 17px;
     }
     .page-model-back{
         margin-top: 10px;
@@ -56,6 +58,7 @@
         font-size: 13px !important;
         line-height: 15px !important;
     }
+        
 }
 
 @media (max-height: 670px) {
