@@ -52,7 +52,7 @@ body, html{
     height: 100%;
     display: flex;
     flex-direction: row;
-
+    background-color: #306481;
     transition: .3s;
 }
 .background-img{
