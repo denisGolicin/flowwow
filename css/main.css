@@ -274,6 +274,7 @@ header{
 /*============================*/
 .model-wrapper{
     width: 100%;
+    transition: height 1s;
     display: flex;
     flex-direction: column;
     align-items: center;

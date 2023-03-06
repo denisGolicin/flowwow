@@ -57,6 +57,11 @@ const animationName = [
 
 let buttonAR = document.querySelector('.view-ar');
 let buttonHide = document.querySelector('.ar-hide');
+let model = document.querySelector('.model-wrapper');
+
+buttonHide.addEventListener('click', function() {
+    model.style.height = "100%";
+});
 
 function pageMove(pageid){
     if(pageid == 1 || pageid == 7){
