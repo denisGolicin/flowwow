@@ -283,6 +283,7 @@ header{
 .model-wrapper>model-viewer{
     width: 80%;
     height: 50px;
+    transition: height .3s;
     border-radius: 50px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.651);
     overflow: hidden;
