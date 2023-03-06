@@ -5,7 +5,8 @@
     -webkit-tap-highlight-color: transparent;
 }
 :root{
-    --text-color: #FA4D1E;
+    --text-color: #C4C1F8;
+    --card-name-color: #FA4D1E;
     --color-button: #F34B1D;
     --color-button-alpha: #f34b1d7e;
     --title-text: #fff;
@@ -252,6 +253,7 @@ header{
 
 .left-text, .right-text{
     width: 35%;
+    color: var(--card-name-color)
 }
 
 /* .left-text:hover{
@@ -388,6 +390,9 @@ header{
     transform: translate(-50%, -50%);
     background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 0%, rgb(60 95 161 / 51%) 0%, rgba(0,0,0,0) 55%);
     z-index: -1;
+}
+.name-flower{
+    line-height: 24px;
 }
 
 /* .invalid-wrapper{
