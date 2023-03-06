@@ -58,8 +58,15 @@ const animationName = [
 let buttonAR = document.querySelector('.view-ar');
 let buttonHide = document.querySelector('.ar-hide');
 let model = document.querySelector('.model-wrapper');
+let modelW = document.querySelector('.model-style');
+let flowerImg = document.querySelector('#flower-img');
 
 buttonHide.addEventListener('click', function() {
+    modelW.style.height = '100%';
+    modelW.style.borderRadius = '0';
+    flowerImg.style.display = 'none';
+    buttonAR.style.display = 'none';
+    buttonHide.style.display = 'none';
     model.style.height = "100%";
 });
 
