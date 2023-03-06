@@ -55,6 +55,8 @@ const animationName = [
     ""
 ];
 
+let buttonAR = document.querySelector('view-ar');
+
 function pageMove(pageid){
     if(pageid == 1 || pageid == 7){
         document.querySelector('header').style.display = 'flex';
@@ -72,5 +74,11 @@ function pageMove(pageid){
         modelView.src = "src/models/" + "2" + ".glb";
         nFlower.innerHTML = nameFlower[id - 1];
         dFlower.innerHTML = descriptionFlower[id - 1];
+
+        if(typeof(buttonAR) != 'undefined' && buttonAR != null){
+            alert('Есть кнопка')
+        } else {
+            alert('Нет кнопки')
+        }
     }
 }
