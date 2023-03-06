@@ -55,7 +55,8 @@ const animationName = [
     ""
 ];
 
-let buttonAR = document.querySelector('view-ar');
+let buttonAR = document.querySelector('.view-ar');
+let buttonHide = document.querySelector('.ar-hide');
 
 function pageMove(pageid){
     if(pageid == 1 || pageid == 7){
@@ -75,10 +76,5 @@ function pageMove(pageid){
         nFlower.innerHTML = nameFlower[id - 1];
         dFlower.innerHTML = descriptionFlower[id - 1];
 
-        if(typeof(buttonAR) != 'undefined' && buttonAR != null){
-            alert('Есть кнопка')
-        } else {
-            alert('Нет кнопки')
-        }
     }
 }
