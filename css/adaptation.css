@@ -98,6 +98,9 @@
     .ar-img {
         width: 100px !important;
     }
+    .ar-hide{
+        font-size: 15px;
+    }
 }
 
 @media (max-height: 600px){
