@@ -68,8 +68,8 @@ function pageMove(pageid){
 
     if(pageid == 8){
         const id = cards.result();
-        // modelView.iosSrc = "src/models/" + "2" + ".usdz";
-        modelView.src = "src/models/" + "1" + ".glb";
+        modelView.iosSrc = "src/models/" + "2" + ".usdz";
+        modelView.src = "src/models/" + "2" + ".glb";
         nFlower.innerHTML = nameFlower[id - 1];
         dFlower.innerHTML = descriptionFlower[id - 1];
     }
