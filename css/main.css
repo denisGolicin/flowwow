@@ -37,9 +37,8 @@ body, html{
     content: '';
     position: absolute;
     top: 0;
-    left: -23%;
-
-    width: 8px;
+    left: -28%;
+    width: 7px;
     height: 100%;
     background-image: url('../svg/arrow.svg');
     background-repeat: no-repeat;
