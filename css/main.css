@@ -123,6 +123,7 @@ header{
     margin-right: 30px;
     color: var(--title-text);
     cursor: pointer;
+    font-size: 18px;
 }
 /* ======================== */
 .page-main-wrapper, .page-question-wrapper{
