@@ -14,12 +14,12 @@ for(let i = 0; i < buttonNext.length; i++){
     buttonNext[i].addEventListener('click', function(){
         if(pageCount >= 1){
             if(!leftCard[i - 1].active && !rightCard[i - 1].active){
-                // invalid.style.display = 'flex';
+                invalid.style.display = 'flex';
 
-                // setTimeout(function(){
-                //     invalid.style.display = 'none';
-                // }, 1500)
-                // return;
+                setTimeout(function(){
+                    invalid.style.display = 'none';
+                }, 1500)
+                return;
             }
         }
         pageCount = i + 1;
