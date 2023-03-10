@@ -92,5 +92,6 @@ modelView.addEventListener('camera-change', (event) => {
     if (modelIsVisible) {
       const animation = modelView.querySelector('#animationId');
       animation.style.display = 'block';
+      alert('test');
     }
   });
