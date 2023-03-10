@@ -73,8 +73,7 @@ function pageMove(pageid){
 
         imgFlower.src = "src/flowers/" + id + ".png";
 
-        modelView.iosSrc = "src/models/" + "2" + ".usdz";
-        modelView.src = "src/models/" + "2" + ".glb";
+        modelView.src = "src/models/" + "2" + ".gltf";
         nFlower.innerHTML = nameFlower[id - 1];
         dFlower.innerHTML = descriptionFlower[id - 1];
 
