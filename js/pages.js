@@ -90,7 +90,7 @@ function pageMove(pageid){
 modelView.addEventListener('camera-change', (event) => {
     const modelIsVisible = event.detail && event.detail.plane && event.detail.plane.visible;
     if (modelIsVisible) {
-      const animation = modelViewer.querySelector('#animationId');
+      const animation = modelView.querySelector('#animationId');
       animation.style.display = 'block';
     }
   });
