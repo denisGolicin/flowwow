@@ -87,12 +87,14 @@ function pageMove(pageid){
     }
 }
 
-modelView.addEventListener('camera-change', () => {
-    if (modelView.getCameraOrbit().target.y < 0) {
-      console.log('Модель не расположена на поверхности');
-      modelView.pause();
-    } else {
-      console.log('Модель расположена на поверхности');
-      modelView.play();
+function startAnimation() {
+    // код для включения анимации
+    modelView.animationName = '08_izyskannost_armatureAction';
+    modelView.play();
+  }
+  
+  modelView.addEventListener('ar-status', (event) => {
+    if (event.detail.status === 'placed') {
+      startAnimation();
     }
   });
