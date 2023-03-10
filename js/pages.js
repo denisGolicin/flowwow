@@ -95,5 +95,6 @@ function startAnimation() {
   modelView.addEventListener('ar-status', (event) => {
     if (event.detail.status === 'placed') {
       startAnimation();
+      invalid.style.display = 'flex';
     }
   });
