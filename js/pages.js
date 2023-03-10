@@ -87,11 +87,12 @@ function pageMove(pageid){
     }
 }
 
-modelView.addEventListener('camera-change', (event) => {
-    const modelIsVisible = event.detail && event.detail.plane && event.detail.plane.visible;
-    if (modelIsVisible) {
-      const animation = modelView.querySelector('#animationId');
-      animation.style.display = 'block';
-      alert('test');
+modelView.addEventListener('camera-change', () => {
+    if (modelView.getCameraOrbit().target.y < 0) {
+      console.log('Модель не расположена на поверхности');
+      modelView.pause();
+    } else {
+      console.log('Модель расположена на поверхности');
+      modelView.play();
     }
   });
