@@ -1,4 +1,4 @@
-const modelView = document.querySelector('.model-style');
+const modelView = document.querySelector('model-viewer');
 const nFlower = document.querySelector('.name-flower');
 const dFlower = document.querySelector('.description');
 const imgFlower = document.querySelector('.ar-img');
@@ -55,6 +55,7 @@ const animationName = [
     "",
     ""
 ];
+const defaultScale = modelView.getAttribute('scale');
 
 function pageMove(pageid){
     if(pageid == 1 || pageid == 7){
@@ -76,6 +77,12 @@ function pageMove(pageid){
         modelView.src = "src/models/" + "2" + ".glb";
         nFlower.innerHTML = nameFlower[id - 1];
         dFlower.innerHTML = descriptionFlower[id - 1];
+
+        if (modelView.hasOwnProperty('setScale')) {
+            modelView.setScale(2, 2, 2);
+          } else {
+            console.error('setScale is not supported in this version of model-viewer');
+          }
 
     }
 }

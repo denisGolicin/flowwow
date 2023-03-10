@@ -75,6 +75,9 @@
 }
 
 @media (max-height: 670px) {
+    .page-question-wrapper>.question-title {
+        margin-bottom: 5px;
+    }
     .card-name-wrapper>p{
         font-size: 13px;
     }
@@ -126,9 +129,7 @@
     .question-text{
         line-height: 18px;
     }
-    .page-question-wrapper>.question-title{
-        margin-bottom: 10px;
-    }
+    
     .header-element>p {
         margin-right: 15px;
         font-size: 18px;
