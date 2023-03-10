@@ -13,6 +13,19 @@
     
 }
 
+@media (max-height: 800px){
+    .final-text {
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+    }
+    .page-model-text {
+        margin-bottom: 20px;
+    }
+    .page-model-text{
+        line-height: 18px;
+    }
+}
+
 @media (max-height: 713px){
 	.button-all{
         transform: translateY(70%);
@@ -55,7 +68,7 @@
         margin-bottom: 10px;
     }
     .description {
-        font-size: 13px !important;
+        font-size: 10px !important;
         line-height: 15px !important;
     }
         

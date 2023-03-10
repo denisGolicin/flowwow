@@ -1,6 +1,7 @@
 const modelView = document.querySelector('.model-style');
 const nFlower = document.querySelector('.name-flower');
 const dFlower = document.querySelector('.description');
+const imgFlower = document.querySelector('.ar-img');
 
 const nameFlower = [
     "Livelymentum",
@@ -68,6 +69,9 @@ function pageMove(pageid){
 
     if(pageid == 8){
         const id = cards.result();
+
+        imgFlower.src = "src/flowers/" + id + ".png";
+
         modelView.iosSrc = "src/models/" + "2" + ".usdz";
         modelView.src = "src/models/" + "2" + ".glb";
         nFlower.innerHTML = nameFlower[id - 1];
