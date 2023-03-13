@@ -56,9 +56,9 @@ function pageMove(pageid){
     if(pageid == 8){
         const id = cards.result();
 
-        imgFlower.src = "src/flowers/" + id + ".png";
-        modelView.src = "src/models/" + id + ".glb";
-        modelView.iosSrc = "src/models/ios" + id + ".reality";
+        // imgFlower.src = "src/flowers/" + id + ".png";
+        // modelView.src = "src/models/" + id + ".glb";
+        // modelView.iosSrc = "src/models/ios" + id + ".reality";
 
         if(id === 5){
             modelView.environmentImage = 'src/models/assets/' + id + '.hdr';
