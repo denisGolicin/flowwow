@@ -58,7 +58,7 @@ function pageMove(pageid){
 
         imgFlower.src = "src/flowers/" + id + ".png";
         modelView.src = "src/models/" + id + ".glb";
-        modelView.iosSrc = "src/models/" + id + ".uzsd";
+        modelView.iosSrc = "src/models/" + id + ".usdz";
 
         if(id === 4){
             modelView.environmentImage = 'src/models/assets/' + id + '.hdr';
