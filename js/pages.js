@@ -43,18 +43,6 @@ const scaleModel = [
     "1.0 1.0 1.0"
 ];
 
-const animationName = [
-    "Anim Blye",
-    "",
-    "Armature|ALL",
-    "rotate",
-    "",
-    "",
-    "",
-    "",
-    "",
-    ""
-];
 const defaultScale = modelView.getAttribute('scale');
 
 function pageMove(pageid){
@@ -72,8 +60,10 @@ function pageMove(pageid){
         const id = cards.result();
 
         imgFlower.src = "src/flowers/" + id + ".png";
+        modelView.src = "src/models/" + id + ".glb";
+        modelView.iosSrc = "src/models/" + id + ".uzsd";
 
-        modelView.src = "src/models/" + "2" + ".gltf";
+
         nFlower.innerHTML = nameFlower[id - 1];
         dFlower.innerHTML = descriptionFlower[id - 1];
 
@@ -85,16 +75,3 @@ function pageMove(pageid){
 
     }
 }
-
-function startAnimation() {
-    // код для включения анимации
-    modelView.animationName = '08_izyskannost_armatureAction';
-    modelView.play();
-  }
-  
-  modelView.addEventListener('ar-status', (event) => {
-    if (event.detail.status === 'placed') {
-      startAnimation();
-      invalid.style.display = 'flex';
-    }
-  });
