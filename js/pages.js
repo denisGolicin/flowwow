@@ -60,7 +60,7 @@ function pageMove(pageid){
         modelView.src = "src/models/" + id + ".glb";
         modelView.iosSrc = "src/models/" + id + ".usdz";
 
-        if(id === 4){
+        if(id === 5){
             modelView.environmentImage = 'src/models/assets/' + id + '.hdr';
         }
 
