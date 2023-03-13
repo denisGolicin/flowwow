@@ -1,4 +1,5 @@
 const modelView = document.querySelector('model-viewer');
+const nFlower = document.querySelector('.name-flower');
 const dFlower = document.querySelector('.description');
 const imgFlower = document.querySelector('.ar-img');
 
@@ -60,5 +61,6 @@ function pageMove(pageid){
         modelView.iosSrc = "src/models/" + id + ".uzsd";
 
         dFlower.innerHTML = descriptionFlower[id - 1];
+        nFlower.innerHTML = nameFlower[id - 1];
     }
 }
