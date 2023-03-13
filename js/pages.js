@@ -60,6 +60,10 @@ function pageMove(pageid){
         modelView.src = "src/models/" + id + ".glb";
         modelView.iosSrc = "src/models/" + id + ".uzsd";
 
+        if(id === 4){
+            modelView.environmentImage = 'src/models/assets/' + id + '.hdr';
+        }
+
         dFlower.innerHTML = descriptionFlower[id - 1];
         nFlower.innerHTML = nameFlower[id - 1];
     }
