@@ -76,7 +76,6 @@ class ProccesTest {
         }
 
         if(this.test[7] === "сорвать" || this.test[7] === "оставить") return obj[this.value]; 
-        else return this.value
-           
+        else return this.value;
     }
 }
