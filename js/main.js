@@ -74,6 +74,7 @@ let textMain = document.querySelector('.main-text-pk');
 if(iOS || android){
 
 } else {
+    alert('Скрипт');
     buttonMain.style.display = 'none';
     textMain.innerHTML = '<a href="https://flowwow.com" target="_blank">The device is not supported! ;(<br>Visit our website</a>';
 }
