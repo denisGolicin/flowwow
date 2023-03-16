@@ -65,7 +65,7 @@ for(let i = 0; i < rightCard.length; i++){
 }
 
 let iOS = (navigator.userAgent.match(/(iPad|iPhone|iPod)/i) ? true : false);
-let iOS7 = (navigator.userAgent.match(/(OS 7_0)/i) ? true : false);
+// let iOS7 = (navigator.userAgent.match(/(OS 7_0)/i) ? true : false);
 let android = (navigator.userAgent.match(/Android/i) ? true : false);
 
 let buttonMain = document.querySelector('.button-main');
