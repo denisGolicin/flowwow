@@ -214,7 +214,7 @@
     }
 }
 
-@media (max-height: 479px){
+@media (max-height: 440px){
     .wrapper{
         display: none;
     }
