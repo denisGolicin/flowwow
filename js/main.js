@@ -71,7 +71,7 @@ let android = (navigator.userAgent.match(/Android/i) ? true : false);
 let buttonMain = document.querySelector('.button-main');
 let textMain = document.querySelector('.main-text-pk');
 
-if(iOS || iOS7 || android){
+if(iOS || android){
 
 } else {
     buttonMain.style.display = 'none';
