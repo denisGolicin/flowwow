@@ -65,16 +65,15 @@ for(let i = 0; i < rightCard.length; i++){
 }
 
 let iOS = (navigator.userAgent.match(/(iPad|iPhone|iPod)/i) ? true : false);
-// let iOS7 = (navigator.userAgent.match(/(OS 7_0)/i) ? true : false);
+let iOS7 = (navigator.userAgent.match(/(OS 7_0)/i) ? true : false);
 let android = (navigator.userAgent.match(/Android/i) ? true : false);
 
 let buttonMain = document.querySelector('.button-main');
 let textMain = document.querySelector('.main-text-pk');
 
-if(iOS || android){
+if(iOS || iOS7 || android){
 
 } else {
-    alert('Скрипт');
     buttonMain.style.display = 'none';
     textMain.innerHTML = '<a href="https://flowwow.com" target="_blank">The device is not supported! ;(<br>Visit our website</a>';
 }
