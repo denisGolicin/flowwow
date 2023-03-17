@@ -298,8 +298,8 @@ header{
     line-height: 24px;
     text-align: center;
     color: var(--title-text);
-    border: 2px solid #ffffff;
-    background-color: #ffffff24;
+    border: 2px solid #ffffffc0;
+    background-color: #0000008f;
     border-radius: 10px;
 }
 .page-model-back{
