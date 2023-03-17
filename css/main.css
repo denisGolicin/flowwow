@@ -293,10 +293,13 @@ header{
 .page-model-text{
     margin-top: 20px;
     margin-bottom: 50px;
+    padding: 10px;
     font-size: 15px;
     line-height: 24px;
     text-align: center;
     color: var(--title-text);
+    background-color: #f34b1daf;
+    border-radius: 10px;
 }
 .page-model-back{
     font-size: 18px;
