@@ -206,8 +206,8 @@ header{
 .final-text{
     font-size: 18px;
     line-height: 20px;
-    margin-top: 30px !important;
-    margin-bottom: 30px !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
 }
 /* ======================== */
 .card-wrapper{
@@ -299,7 +299,7 @@ header{
     text-align: center;
     color: var(--title-text);
     border: 2px solid #ffffffc0;
-    background-color: #181727af;
+    background-color: #181727bd;
     border-radius: 10px;
 }
 .page-model-back{
@@ -399,7 +399,7 @@ header{
     z-index: -1;
 }
 .name-flower{
-    line-height: 24px;
+    line-height: 44px;
 }
 
 #animationId{
