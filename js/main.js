@@ -75,5 +75,5 @@ if(iOS || iOS7 || android){
 
 } else {
     buttonMain.style.display = 'none';
-    textMain.innerHTML = '<a href="https://flowwow.com" target="_blank">The device is not supported! ;(<br>Visit our website</a>';
+    textMain.innerHTML = '<a href="https://flowwow.com" target="_blank">Это устройство не поддерживается! ;(<br>Посетите наш веб-сайт</a>';
 }

@@ -153,6 +153,7 @@ header{
 
     font-size: 40px;
     font-weight: 700;
+    line-height: 45px;
     color: var(--title-text);
     text-align: center;
 }
